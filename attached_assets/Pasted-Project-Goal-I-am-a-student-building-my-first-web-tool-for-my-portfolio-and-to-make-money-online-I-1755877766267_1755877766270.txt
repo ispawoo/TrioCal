@@ -1,0 +1,112 @@
+Project Goal: I am a student building my first web tool for my portfolio and to make money online. I want to create "ConvertEasy," a multi-tool calculator and converter suite. I will build it using React, host the code on GitHub, and deploy it for free on Vercel. I will later monetize it with ads.
+
+My Tech Stack Plan:
+
+Frontend: React (using Vite for creation)
+
+Hosting/Deployment: Vercel (connected to a GitHub repo)
+
+Backend (if needed): Vercel Serverless Functions
+
+Monetization: Google AdSense
+
+The Application Features (Version 1):
+The app will have a tab-based navigation with three tools:
+
+Tip Calculator: Inputs for bill amount, tip percentage (with preset buttons and a custom option), and number of people to split the bill. It displays tip amount, total bill, and total per person.
+
+Percentage Calculator: Two modes:
+
+Mode 1: "What is [X]% of [Y]?"
+
+Mode 2: "[X] is what percent of [Y]?"
+
+Currency Converter: Input for amount, dropdowns for "from" and "to" currencies (USD, EUR, GBP, INR, etc.), and a convert button. We will use a free API like exchangerate-api.com.
+
+Your Role: You are my senior developer mentor. Guide me through this project step-by-step. Provide clear, concise code snippets and explanations. Help me debug errors when I get stuck. Do not give me the entire codebase at once; break it down into manageable tasks.
+
+We will proceed in phases. Let's start with Phase 1.
+
+Phase 1: Project Setup and Initialization
+
+Confirm the project name is "convert-easy".
+
+Tell me the exact terminal commands to create a new React project using Vite for this tool.
+
+Provide the commands to navigate into the project directory and install the necessary dependencies.
+
+Explain how to start the local development server so I can see the app in my browser.
+
+Please provide the instructions and commands for Phase 1. After I successfully complete this phase, I will tell you "Phase 1 Complete," and we will move on to Phase 2.
+
+FOLLOW-UP PROMPTS (Use these in order after each phase)
+After you get a response and complete the steps for Phase 1, reply with:
+
+"Phase 1 Complete. The dev server is running. Let's begin Phase 2: Building the Main Layout and Tabs."
+
+Then, for Phase 2, send this prompt:
+
+"For Phase 2, please generate the code for the main App.jsx component. It should:
+
+Use the useState hook to manage the active tab state (e.g., 'tip', 'percentage', 'currency').
+
+Render a simple tab navigation bar with buttons to switch between the three tools.
+
+Use conditional rendering to display the correct component based on the active tab.
+
+For now, create three placeholder components (e.g., TipCalculator, PercentageCalculator, CurrencyConverter) that just return a heading like <h1>Tip Calculator</h1>.
+
+Include basic CSS to make the active tab visually distinct (e.g., different background color)."
+
+After Phase 2 is done, reply with:
+
+"Phase 2 Complete. The tabs are working. Let's begin Phase 3: Building the Tip Calculator component."
+
+Then, for Phase 3, send this prompt:
+
+"For Phase 3, please generate the complete code for the TipCalculator.jsx component. It must include:
+
+State variables for billAmount, tipPercentage, customTip, numberOfPeople.
+
+Input fields for bill amount and number of people.
+
+Preset buttons for tip % (10%, 15%, 18%, 20%).
+
+An input for a custom tip percentage (shown if a user selects a 'Custom' option).
+
+Real-time calculation and display of: Tip Amount, Total Bill, and Total Per Person.
+
+Logic to handle the preset buttons and the custom input gracefully."
+
+Continue this process for each component. Here are the prompts for the next phases:
+
+After Phase 3:
+
+"Phase 3 Complete. The Tip Calculator works. Let's begin Phase 4: Building the Percentage Calculator component."
+Prompt for AI: "Generate the code for PercentageCalculator.jsx. It needs two modes (radio buttons to switch): 'Find Percentage' and 'Find Amount'. Calculate and display the result in real-time as the user types."
+
+After Phase 4:
+
+"Phase 4 Complete. The Percentage Calculator works. Let's begin Phase 5: Building the Currency Converter component."
+*Prompt for AI: "Generate the code for CurrencyConverter.jsx. For now, use hardcoded rates (e.g., 1 USD = 0.92 EUR, 1 USD = 0.79 GBP). Include: amount input, 'from' dropdown, 'to' dropdown, a 'Convert' button, and a result display. We will integrate a real API later."*
+
+After Phase 5:
+
+"Phase 5 Complete. All calculators are built. Let's begin Phase 6: Styling and Polish."
+Prompt for AI: "The app is functional but ugly. Provide a complete, modern CSS stylesheet for App.css to make it look professional. Use a clean color scheme, rounded corners, nice fonts, and a responsive layout that works on mobile and desktop."
+
+After Phase 6:
+
+"Phase 6 Complete. The app looks great. Let's begin Phase 7: Deployment on Vercel."
+Prompt for AI: "My code is ready. Guide me through the steps to deploy this Vite React app for free on Vercel. This should include: 1) Pushing the code to a GitHub repository, and 2) Connecting that repository to Vercel for automatic deployment. Provide the exact commands for git and the key settings in the Vercel dashboard."
+
+After Phase 7 (You have a live website!):
+
+"Phase 7 Complete. The app is live! Let's begin Phase 8: Adding Currency Converter API."
+Prompt for AI: "Now let's replace the hardcoded rates in the Currency Converter with a real, free API. Help me choose a free API like exchangerate-api.com. Show me how to use the useEffect hook to fetch the latest rates when the component loads and handle the conversion using the live data."
+
+Final Phase:
+
+"Phase 8 Complete. All features are live. Let's begin Phase 9: Monetization with AdSense."
+Prompt for AI: "My site is live on Vercel. How do I apply for and integrate Google AdSense into my React application? Where is the best place to put the ad code? Please provide a step-by-step guide."
+
